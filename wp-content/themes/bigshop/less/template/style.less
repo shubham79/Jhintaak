@@ -1,0 +1,493 @@
+/*
+*
+*/
+.wpo-header{
+	.inner{
+		.logo{
+			display: block;
+			margin: -5px 40px 0 0;
+			vertical-align: top;
+		}
+	}
+}
+
+.textwidget{
+	.contact-desc{
+		margin: 10px 0 10px;
+	}
+    .contact{
+    	li{
+    		line-height: 17px;
+	        .media-body{
+	            display: block;
+	        }
+			.pull-left{
+				display: table;				
+				text-align: center;
+				background: @theme-color;	
+				.size(36px,36px);
+				.translate(0px,0px);			    
+			    .transition(all 0.3s);			    
+				.box-shadow(~"0 0 0 3px @theme-color inset, 0 0 1px rgba(0, 0, 0, 0)");  
+				&:hover{
+					background: transparent;
+					.border-radius(50%);
+					.box-shadow(0 0 0 2px @white inset);   
+				}  
+			}
+			.fa{
+				color: @white;
+				display: table-cell;
+				vertical-align: middle;				
+			}			
+	    }
+    }
+}
+
+.group-input-form{		
+	margin-bottom: 20px;
+	input[type="email"],
+	input[type="text"]{
+		border-width: 1px 0px 1px 1px;	
+	}
+	.input-group-addon{
+		padding: 0;
+		position: relative;
+		border-width: 1px 1px 1px 0;
+		border-style: solid;
+		border-color: @border-color;
+		background: none transparent;
+		.border-radius(0);
+		.fa{			
+			padding: 0;
+			margin: 0;
+			border: 0;
+			color: @black;
+			.size(36px,36px);
+			background: none transparent;
+		}
+	}
+}
+
+.yith-wcwl-add-to-wishlist{
+	margin: 0;
+	padding: 0;	
+	display: inline-block;	
+	.ajax-loading{
+		display: none !important;
+	}
+	.yith-wcwl-add-button{
+		.clearfix();
+	}
+}
+
+.padding-20{
+    padding-left: 20px;
+    padding-right: 20px;
+}  
+
+/*------------------------------------*\
+    Slideshow
+\*------------------------------------*/
+.slideshow{
+	margin-top: @theme-margin - 2;	
+}
+
+/*------------------------------------*\
+    Typographic
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+	text-transform: @heading-transform;
+	color: @heading-color;
+}
+
+.page-title{	
+	margin: 0 0 @theme-margin 0;	
+	font-size: @heading-page-title;	
+	padding: 0 0 @theme-padding - 5 0;
+	border-bottom: 1px solid darken(@border-color, 8%);
+	.box-shadow(0px 1px 0px 0px @white); 
+}
+
+.term-description{
+	margin-bottom: @theme-margin - 2;
+	&:extend(.wrapper);
+}
+
+div.wpcf7-validation-errors{
+	margin: 0;
+	padding: 15px;
+}
+
+.contact-form-content{
+	padding: @theme-padding;
+	background: @body-bg;
+	margin-bottom: @theme-margin;
+	min-height: 260px;
+	.rounded{
+		display: table;
+		color: @white;		
+		text-align: center;
+		.size(40px,40px);
+		background: darken(@body-bg, 20%);
+		.fa{
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 16px;
+		}
+	}
+	small{
+		color: darken(@text-color, 20%);
+	}
+}
+
+.rounded{
+	.border-radius(50px);
+}
+
+#breadcrumb{
+	padding: 0;
+	margin-top: @theme-margin - 5;
+	margin-bottom: @theme-margin - 5;
+}
+
+/*------------------------------------*\
+    Top Cart
+\*------------------------------------*/
+.top-cart{	
+	padding: 8px 13px;	
+	background: @theme-color-senary;
+	text-align: center;
+	position: fixed;
+    top: 37px;	
+	&.fixed{
+		top:0;
+	}
+	> *{		
+		color: @white;
+		display: block;
+	}
+	.icon-cart{				
+		margin-bottom: 3px;
+		display: inline-block;
+	}	
+	.number-item{
+		padding-top: 1px;
+		border-top: 1px solid darken(@white, 20%);
+	}
+}
+
+/*------------------------------------*\
+    Social
+\*------------------------------------*/
+.social{
+	li{
+		float: left;
+		a{
+			.size(28px,28px);
+			display: table;
+			text-align: center;
+			margin: 0 12px 10px 0;
+			background: @theme-color;
+			border: 1px solid @border-color;			
+		}
+		.fa{
+			color: @white;
+			display: table-cell;			
+			vertical-align: middle;
+		}		
+		.facebook{
+			background: @steel-blue;
+		}
+		.twitter{
+			background: @sky-blue;
+		}
+		.flickr{
+			background: @pink;
+		}		
+		.google-plus{
+			background: @orange;
+		}
+		.linkedin{
+			background: @prussian-blue;
+		}		
+		.dribbble{
+			background: @brink-pink;
+		}			
+		.skype{
+			background: @bittersweet;
+		}
+	}
+}
+
+/*------------------------------------*\
+    Color
+\*------------------------------------*/
+.blue{
+	.box-heading{
+		.fa{
+			background: @blue;
+		}
+	}
+}
+.brown{
+	.box-heading{
+		.fa{
+			background: @sandy-brown;
+		}
+	}
+}
+.cadillac{
+	.box-heading{
+		.fa{
+			background: @cadillac;
+		}
+	}
+}
+.green{
+	.box-heading{
+		.fa{
+			background: @ocean-green;
+		}
+	}
+}
+
+/*------------------------------------*\
+    Quickview
+\*------------------------------------*/
+#wpo_modal_quickview{
+	.box-shadow(0 10px 25px rgba(0, 0, 0, 0.1));
+    .border-radius(4px);
+    .size(auto,auto);
+    border: 0;        
+    .modal-dialog{
+		overflow: hidden;
+		del{
+			.amount{
+				color: @text-color;
+			}
+		}
+    }  
+    .modal-content{
+    	border: 0;
+    }  
+    .modal-body{
+    	padding: 30px;
+    }
+    .modal-header{    		
+    	border: 0;
+    }
+    #single-product{
+    	padding: 0;
+    	h1{
+    		padding-top: 0;
+    	}
+    	.qty{
+    		position: relative;
+    		left: 1px;
+    	}
+    }
+}
+
+/*------------------------------------*\
+    Customize Live Theme Editor
+\*------------------------------------*/
+#wpo-customize{
+	top: 0;
+	.box-shadow(3px 3px 5px -3px rgba(0, 0, 0, 0.15));
+	.panelbutton{
+		border-color: darken(@border-color, 5%);
+		.box-shadow(3px 3px 5px -3px rgba(0, 0, 0, 0.15));		
+	}
+	.panel-heading{
+		padding: 3px 10px;
+	}
+	.group-input label{
+		font-weight: normal;
+	}	
+	.group-input{
+		margin-top: 0;
+		margin-bottom: 15px;
+		margin-right: 6px;
+	}
+	.nav{
+		border: 0;
+		a{
+			padding: 5px 10px;
+			.border-radius(0);
+			margin: 0 3px 3px 0;
+			border: 1px solid @border-color;
+			&:hover{
+				background: @white;				
+			}
+		}
+	}
+	.label{
+		padding: 4px 5px;
+	}
+	.panelbutton{
+		right: -36px;
+		.box-shadow(3px 3px 5px -3px rgba(0, 0, 0, 0.15));		
+	}
+	.panel-heading{
+		padding: 2px 5px;
+	}
+	.group-input{
+		label{
+			font-weight: normal;
+		}		
+	}	
+}
+
+/*-------------------------------------------
+	Modal
+-------------------------------------------*/
+
+.modal-content {		
+	.box-shadow(none);		
+	.border-radius(0);  
+}
+
+.modal-lg {
+    width: 900px;
+    &.modal-min-width{
+        .size(500px,auto); 
+        min-height: 90px;       
+        .modal-content{
+            border: 0;
+        }    
+    }
+    .total,.buttons{
+        text-align: center;
+    }
+    .amount{
+    	color: @theme-color;
+    }
+}
+
+/*-------------------------------------------
+	Pagination
+-------------------------------------------*/
+.pagination { 	
+	> li {  
+	> a,
+		> span {
+			color: @text-color;
+			padding: 5px 10px;
+			margin: 0 5px;	
+		}
+		&:first-child {
+			> a,
+			> span {        
+			.border-left-radius(0px);
+			}
+	    }
+	    &:last-child {
+			> a,
+			> span {
+			.border-right-radius(0px);
+			}
+	    }	    
+	}
+	> li > a,
+		> li > span {
+		&:hover,
+		&:focus {
+			border-color: @pagination-border-hover;
+		}
+	}		
+	> .active > a,
+		> .active > span {
+		&,
+		&:hover,
+		&:focus {				
+			border-color: @pagination-active-border;			
+		}
+	}
+	>li >span.current{		
+		border-color: @pagination-active-border;		
+	}	
+}
+
+.result-count{
+	padding: 5px 0;
+	margin: 0;
+}
+
+/*-------------------------------------------
+	No Margin
+-------------------------------------------*/
+.no-margin{
+	margin: 0 !important; 
+	.pagination{
+		margin: 0;
+	}
+}
+
+/*-------------------------------------------
+	No Padding
+-------------------------------------------*/
+.no-padding{
+	padding: 0 !important; 	
+}
+
+/*-------------------------------------------
+	Wrapper
+-------------------------------------------*/
+.wrapper{
+    background: @white;
+    padding: @theme-padding;
+    margin-bottom: @theme-margin;
+    &.small-padding{
+    	padding: @theme-padding / 2;    	
+    	font-size: @font-size-base - 2;
+    }
+    &.large-padding{
+    	padding: @theme-padding + 10;    	
+    }
+    &.no-margin{
+    	margin-bottom: 0;
+    }
+    &.no-padding{
+    	padding-bottom: 0;
+    }
+}
+/*-------------------------------------------
+	Offcanvas
+-------------------------------------------*/
+.wpo-off-canvas-body{
+	#searchform{
+		margin-right: 35px;
+		.input-search{
+			height: 35px;
+			.border-radius(0);
+		}
+		.input-group-addon{
+			.border-radius(0);
+		}
+	}
+}
+
+.place-order{
+	padding: @theme-margin;
+}
+
+/*------------------------------------*\
+    Mobile
+\*------------------------------------*/
+.icon-mobile{
+	.size(30px,30px);
+	color: @white;
+	display: table !important;
+	text-align: center;
+	.border-radius(50%);
+	cursor: pointer;
+	margin: 10px 5px;
+	background: @theme-color;
+	.fa{
+		display: table-cell;
+		vertical-align: middle;	
+	}
+}

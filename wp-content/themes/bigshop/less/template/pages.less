@@ -1,0 +1,74 @@
+// Blog Layout
+.post-area{
+	article{
+		margin-bottom: @theme-margin * 2 + 10;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+// Portfolio
+//----------------------------------
+#portfolio{
+	.portfolio-box{
+		.item{
+			.transition-duration(@portfolio-animate-duration);
+		}
+	}
+
+	.portfolio-filters{
+
+	}
+}
+
+
+// Woocommerce - My Account
+//----------------------------------
+.woocommerce,
+.woocommerce-page{
+	form{
+		&.checkout_coupon,&.login,&.register,&.checkout_coupon{
+			border: 0;			
+			margin: 0;
+			padding: 0;
+			.border-radius(0);
+		}
+	}
+}
+
+// Footer
+//----------------------------------
+.logo-copyright{
+	img{
+
+	}
+}
+
+// 404
+//----------------------------------
+.page_not_found{		
+	margin: 190px 0;
+	min-height: 300px;
+	.bigtext{
+		color: @theme-color;
+		font-family: @font-family-senary;
+		font-size: 140px;
+		line-height: 140px;
+	}
+	.searchform{
+		margin: 50px auto 0;
+    	width: 75%;
+	}
+	.h1{
+		margin: 0;
+	}	
+}	
+
+.search-no-results{
+	.wrapper{
+		.wpo-search{
+			border: 1px solid @border-color;
+		}
+	}	
+}

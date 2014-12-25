@@ -1,0 +1,130 @@
+/* Megamenu */
+
+.dropdown-submenu > .dropdown-menu {
+	top: 0;
+	left: 100%;
+	margin-top: -5px;
+	margin-left: -1px;
+}
+
+.wpo-megamenu {
+	[class*="menu-item-"]{
+		/*position: relative;*/
+	}
+	.depth-0.aligned-fullwidth{
+		position: inherit;
+		>.dropdown-menu{
+			width: 100%!important;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.wpo-megamenu.animate {
+		.mega{
+			>.dropdown-menu{
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+			    opacity: 0;
+			}
+			&.animating{
+				>.dropdown-menu{
+          			overflow: hidden;
+					.transition(all 400ms);
+					display: block!important;
+				}
+			}
+			&.open{
+				>.dropdown-menu{
+					opacity: 1;
+				}
+				&.animating{
+					> .dropdown-menu{
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		//Effect Zoom
+		&.zoom{
+			.mega{
+				> .dropdown-menu{
+					.scale(0,0);
+					.origin(20%,20%);
+				}
+				&.open{
+					> .dropdown-menu{
+						.scale(1,1);
+					}
+				}
+			}
+		}
+
+		//Effect Elastic
+		&.elastic{
+			.mega{
+				> .dropdown-menu {
+					.scale(0,1);
+					.origin(10%,0);
+				}
+				&.open{
+					> .dropdown-menu {
+						.scale(1,1);
+					}
+				}
+			}
+			.depth-0{
+				&.mega > .dropdown-menu {
+					.scale(1,0);
+				}
+				&.open{
+					> .dropdown-menu {
+						.scale(1,1);
+					}
+				}
+			}
+		}
+
+		//Effect Slide
+		&.slide{
+			.mega{
+				&.animating{
+					> .dropdown-menu {
+						overflow: hidden;
+					}
+				}
+				> .dropdown-menu > div {
+					.transition(all 400ms);
+					.backface-visibility(hidden);
+					margin-top: -100%;
+				}
+				&.open > .dropdown-menu > div {
+					margin-top: 0%;
+				}
+				.mega > .dropdown-menu {
+					min-width: 0;
+					>div{
+						min-width: 200px;
+					    margin-top: 0;
+					    margin-left: -500px;
+					}
+				}
+				.mega.open > .dropdown-menu > div {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
+
+
+/*------------------------------------*\
+    Megamenu RTL
+\*------------------------------------*/
+
+body.rtl .dropdown-submenu > .dropdown-menu{
+	left: auto;
+	right: 100%;
+}

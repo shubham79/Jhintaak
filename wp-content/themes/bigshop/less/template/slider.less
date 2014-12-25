@@ -1,0 +1,92 @@
+/*
+ *  Revolution Slider
+ */
+.tp-caption{
+	&.text-style-white{
+		font-size: 60px;
+		font-family: @font-family-secondary;
+		color:@white;
+		letter-spacing: -5px;
+		line-height: 10px;
+	}
+	&.text-style-yellow{
+		font-size: 60px;
+		font-family: @font-family-senary;
+		color:#f4f716;
+		letter-spacing: -5px;
+		line-height: 10px;
+		text-transform: uppercase;
+	}
+	
+	&.text-style-white-medium{
+		font-size: 36px;		
+		color:@white;
+		letter-spacing: -2px;
+		line-height: 10px;
+		font-family: @font-family-secondary;
+	}
+	&.text-style-yellow-medium{
+		font-size: 48px;
+		font-family: @font-family-senary;
+		color:#f4f716;
+		letter-spacing: -3px;
+		line-height: 10px;
+		text-transform: uppercase;
+	}
+
+	&.text-style-white-small{
+		font-size: 18px;
+		font-family: @font-family-secondary;
+		color:@white;
+		line-height: 10px;
+		letter-spacing: -1px;
+	}
+
+	.slidebutton{
+		text-transform: uppercase;
+		font-size: 10px;		
+		padding:13px 15px;
+		background: #262a2e;
+		.border-radius(2px);
+		font-family: @font-family-secondary;
+		color:@white;
+		&:hover{
+			text-decoration: none;
+			color:@white;
+		}
+	}
+}
+
+.tparrows{
+	&.default{
+		background-image: none;
+		.size(32px,50px);
+		color: @white;		
+		position: relative;
+		background-color: rgba(0, 0, 0, 0.25);
+		&:before{
+			content: "\f105";
+			font-family: @theme-font-name;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			display: block;
+    		.size(2px,20px);     
+    		color: @white;
+    		font-weight: bold;
+    		font-size: 15px;
+		}		
+	}
+	&.tp-leftarrow{
+		&:before{
+			content: "\f104";
+		}		
+	}
+}
+
+.fullwidthbanner-container{
+	z-index: 99;
+}

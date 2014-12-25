@@ -1,0 +1,197 @@
+/*
+ *  Base
+ */
+body{
+
+}
+
+img{
+	max-width: 100%;
+}
+
+.img-full{
+	img{
+		width:100% !important;
+	}
+}
+
+
+ul.menu,ol.menu{
+	list-style: none;
+	padding:0;
+}
+
+a{
+	&:hover,
+	&:focus{
+		outline: none;
+		text-decoration: none;
+	}
+}
+
+iframe{
+	border:none;
+}
+
+label{
+	font-weight: normal;
+}
+
+del{
+	font-size: 14px;
+}
+
+form label{
+	font-weight: normal;
+}
+
+.no-background{
+	.page{
+		background: transparent!important;
+		padding:0!important;
+	}
+}
+
+.addthis{
+	.addthis_button_google_plusone{
+		margin-left: -25px;
+		margin-right: -29px;
+	}
+}
+
+.video-responsive {
+	height: 0;
+	padding-top: 0;
+	padding-bottom: 56.25%;
+	margin-bottom: 10px;
+	position: relative;
+	overflow: hidden;
+	embed,iframe,object,video{
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+}
+
+.audio-responsive{
+	iframe{
+		width: 100%;
+		height: 126px;
+	}
+}
+
+// Google Map
+//---------------------------------
+.map_canvas{
+	img{
+		max-width: none;
+	}
+}
+.spinner{
+	background: url('@{image-theme-path-base}spinner.gif') no-repeat;
+	background-size: 20px 20px;
+	display: block;
+	opacity: .7;
+	filter: alpha(opacity=70);
+	width: 20px;
+	height: 20px;
+	margin:0 auto;
+}
+
+// Carousel
+//---------------------------------
+.carousel-controls{
+	position: absolute;
+	top: -44px;
+	right: 0;
+	z-index: 100;
+	.text-shadow(none);
+	.clearfix();
+	a{
+		.size(34px,34px);
+		background: @white;
+		float: left;
+		margin-right: 1px;
+		&:hover{
+			background-color: @theme-color;
+			.conner{
+				border: 1px solid darken(@white, 20%);
+			}
+			.fa{
+				color: @white;
+			}
+		}
+	}
+	.conner{
+		.size(16px,16px);
+		border: @carousel-border;
+		.border-radius(20px);
+		text-align: center;
+		display: table;
+		margin: @theme-margin - 11px;
+	}
+	.fa{
+		font-size: @carousel-font-size;
+		color: @carousel-font-color;
+		font-weight: bold;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+.carousel-control{
+	.text-shadow(none);
+	.box-shadow(none);
+	width: 30px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	background: @valencia;
+	opacity: 0.5;
+	&.left {
+		background-image: none;
+		left:0;
+	}
+	&.right {
+		background-image: none;
+		right:0;
+	}
+	&:hover{
+		opacity: 1;
+	}
+	span{
+		line-height: 50px;
+	}
+}
+
+// Tabs
+//---------------------------------
+.tabbable{
+	.nav-tabs {
+		border: 0;
+		> li {
+			margin: 0;
+			> a{
+				border: 0;
+				text-transform: uppercase;
+				.border-radius(0);
+				&:hover{
+					color: @white;
+					background: @theme-color;
+				}
+			}
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					border: 0;
+					background: @theme-color;
+					color: @white;
+				}
+			}
+		}
+	}
+}

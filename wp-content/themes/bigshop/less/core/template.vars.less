@@ -1,0 +1,321 @@
+// Global values
+// --------------------------------------------------
+
+// Variables
+// --------------------------------------------------
+@image-theme-path-base 				:'../images/';
+@image-theme-path 					:'../images/default/';
+
+// Theme Margin, Padding
+@theme-margin: 				20px;
+@theme-padding: 			20px;
+
+// themes colors
+// -------------------------
+
+@lightblue: 				#179bb2;
+@white: 					#ffffff;
+@black: 					#000000;
+@white-smoke: 				#E9E9E9;
+@valencia: 					#d35346;
+@suva-grey: 				#909090;
+@raven:                     #6F757C;
+@shark:  					#262a2e;
+@black-pearl: 				#1a1f23;
+@silver:                    #cccccc;
+@cadillac: 					#9e4f7b;
+@ocean-green: 				#59A380;
+@sandy-brown: 				#EEA360;
+@blue: 						#008BBA;
+@gorse: 					#FFE82A;
+@turquoise: 				#46B3D4;
+@dim-gray: 					#666666;
+@alabaster: 				#fafafa;
+@steel-blue:                #507cbe;
+@sky-blue: 					#00abef;
+@pink: 						#ff0084;
+@orange:   					#cb4437;
+@prussian-blue: 			#00649b;
+@brink-pink: 				#f76799;
+@bittersweet: 				#ff6f6f;
+@tahiti-gold: 				#E37032;
+
+@text-color: 				@suva-grey;
+@link-color:  				@black;
+@link-color-hover: 			@theme-color;
+@border-color: 			    #e5e5e5;
+
+@theme-color:               @valencia;
+@theme-color-hover:         @valencia;
+@theme-color-secondary:     @shark;
+@theme-color-senary:        @turquoise;
+//@theme-color-septenary:     @shark;
+
+// Font-family
+
+@font-family-primary		:'rockwellregular', sans-serif;
+@font-family-septenary 		:'rockwellbold', sans-serif;
+@font-family-quinary 		:'rockwellitalic', sans-serif;
+@font-family-secondary		:'montserratregular', sans-serif;
+@font-family-senary		    :'montserratbold', sans-serif;
+@font-family-denary		    :'rockwellregularWOFF', sans-serif;
+
+//quaternary, quinary, senary, septenary, octonary, nonary, and denary
+
+@theme-font-path            :'../fonts/';
+@fa-version 				:4.0.3;
+@theme-font-name            :'FontAwesome';
+
+// Wooecommerce
+// -------------------------
+
+// typography
+// -------------------------
+@heading-transform: 		uppercase;
+@heading-color: 			@black;
+@heading-page-title:        30px;
+
+// Sale
+// -------------------------
+@sale-label-font-size:      10px;
+@sale-label-bg:             #d43a72;
+@sale-label-color:          @white;
+
+//Header
+// -------------------------
+@header-bg    				: @theme-color;
+@header-height 				: 80px;
+@header-padding             : 22px 0;
+
+// Carousel
+// -------------------------
+@carousel-border:           1px solid darken(@border-color, 20%);
+@carousel-font-size: 		@font-size-base - 3;
+@carousel-font-color: 		@black;
+
+// Search
+// -------------------------
+@search-bg:                 @white;
+@search-color:              @raven;
+@search-border:             0px;
+@search-font-size:          12px;
+@search-padding:            9px 14px;
+@search-width:              auto;
+@search-icon-color:         @shark;
+@search-button-bg:          @white;
+@search-button-border:      0px;
+@search-radius:             3px;
+@search-height:             36px;
+
+// Social
+// -------------------------
+
+// Topbar
+// -------------------------
+@topbar-bg: 				@shark;
+@topbar-padding:            10px 0;
+@topbar-link-color: 		@text-color;
+@topbar-link-hover-color:   @theme-color;
+@topbar-text-color: 		@theme-color;
+
+// Breadcrumbs
+// -------------------------
+@breadcrumb-padding:        10px 0;
+@breadcrumb-text-color:     @black;
+@breadcrumb-link-color:     @text-color;
+
+// Sidebar
+// -------------------------
+@sidebar-bg:                      @white;
+@sidebar-box-heading-padding:     12px 12px 13px 54px;
+@sidebar-box-heading-font-size:   12px;
+
+
+// Form - input
+// -------------------------
+@input-border:                    1px solid @border-color;
+@input-padding:                   6px;
+
+
+// Slideshow
+// -------------------------
+@slideshow-button-color: 		   @white;
+@slideshow-button-hover-color:     @white;
+@slideshow-button-bg: 		   	   @shark;
+@slideshow-button-border: 		   0px;
+@slideshow-button-radius:          4px;
+@slideshow-button-padding:         13px;
+@slideshow-button-line-height:     normal;
+@slideshow-button-font-size:       10px;
+
+@slideshow-arrow: 				   @white;
+
+// Slideshow
+// -------------------------
+@pagination-border-hover: 		   @border-color;
+@pagination-active-border: 		   @pagination-border-hover;
+
+// Main Menu
+// -------------------------
+@menu-color 				:@white;
+@menu-color-active 			:@black;
+@menu-font-family           :@font-family-secondary;
+@menu-font-sub-family       :@font-family-primary;
+@menu-link-hover-bg         :@theme-color-secondary;
+@menu-radius 				:3px;
+
+// Vertical Menu
+// -------------------------
+@vertical-menu-padding:             0px;
+@vertical-menu-bg: 					@shark;
+@vertical-menu-bg-hover:			@white;
+@vertical-menu-color: 				@raven;
+@vertical-menu-link-color:  		#ccd4db;
+@vertical-menu-link-hover-color:    @theme-color;
+@vertical-menu-link-font-size:      13px;
+@vertical-menu-icon-color: 			@raven;
+@vertical-menu-icon-font-size:      20px;
+@vertical-menu-link-font-family: 	@font-family-senary;
+@vertical-menu-font-family: 		@font-family-primary;
+@vertical-menu-font-size:           12px;
+@vertical-menu-link-padding:        16px 20px;
+@vertical-menu-border-color: 		1px solid #111417;
+@vertical-menu-box-shadow: 			0px 6px 0px -5px #32363a;
+
+// Product
+// -------------------------
+@product-bg:                	@white;
+@product-font-size:         	12px;
+@product-price-color:       	@theme-color;
+@product-price-font-size:   	18px;
+@product-button-font-size:  	10px;
+@product-button-color:      	@silver;
+@product-button-border:     	2px solid @border-color;
+@product-button-bg:         	@white;
+@product-button-padding:    	0;
+@product-button-hover-color: 	@white;
+@product-button-hover-border: 	@theme-color;
+@product-button-hover-bg:   	@theme-color;
+@product-icon-font-size:    	13px;
+@product-link-color:            @black;
+@product-link-hover-color:      @theme-color;
+@product-highlight-link-hover:  @gorse;
+
+// Button
+// -------------------------
+@button-bg:                         @white;
+@button-font-size:                  10px;
+@button-color:                      @black;
+@button-border-radius:              2px;
+@button-addtocart-color:    		@black;
+@button-addtocart-border:   		2px solid @black;
+@button-addtocart-padding:          0px 10px;
+@button-font-family: 		 	    @font-family-senary;
+@button-quickview-border:           0px;
+@button-quickview-padding:          13px 0;
+@button-border-width:               2px;
+
+// Box
+// -------------------------
+@box-margin:                        30px;
+@box-heading-padding:               7px 10px;
+@box-heading-color:                 @white;
+@box-heading-bg:                    @shark;
+@box-heading-font-family: 			@font-family-senary;
+@box-heading-icon-size:             15px;
+@box-heading-icon-bg:               @theme-color;
+
+// Blog
+// -------------------------
+@blog-title-font-size:              16px;
+
+// Portfolio
+// -------------------------
+@portfolio-animate-duration :0.8s;
+
+// Post
+// -------------------------
+@post-title-font-size 		:24px;
+@post-share-margin 			:10px;
+@post-share-icon-color 		:#333;
+@post-share-icon-margin 	:20px;
+@post-share-icon-size 		:16px;
+@post-author-avatar-margin  :@theme-margin/4;
+
+// Comment
+@comment-list-border-color  	:#e7e6e6;
+@comment-list-padding 			:@theme-padding*1.25;
+@comment-list-margin 			:@theme-margin*1.25;
+@comment-list-avatar-margin 	:@theme-margin*0.75;
+@comment-list-author-margin  	:@comment-list-avatar-margin;
+@comment-list-children-padding 	:@theme-padding*2;
+
+// Widget Layout
+@widget-title-font-family 	:"Helvetica Neue", Helvetica, Arial, sans-serif;
+@widget-margin-bottom 		:@theme-margin;
+
+// Widget post
+@widget-image-size 				:72px;
+
+@widget-post-title-font-size 	:14px;
+@widget-post-title-font-weight 	:300;
+@widget-post-meta-font-size 	:12px;
+@widget-post-margin 			:@theme-margin/4;
+
+// Widget tags cloud
+@widget-tag-border-color 		:#333;
+@widget-tag-color 				:#333;
+@widget-tag-bg-hover 			:#333;
+@widget-tag-border-color-hover  :@widget-tag-bg-hover;
+@widget-tag-font-size 			:13px;
+@widget-tag-height 				:28px;
+
+
+//Footer
+// -------------------------
+@footer-bg  				:@black-pearl;
+@footer-color 				:@text-color;
+@footer-link-color          :@text-color;
+@footer-heading-font-size   :12px;
+@footer-top-padding 		:40px;
+@copyright-bg 				:@gray-dark;
+@copyright-padding          :28px 0;
+@copyright-border           :1px solid @shark;
+@copyright-link-color 		:@theme-color;
+
+// Off-Canvas Width
+@wpo-off-canvas-width:                 250px;
+
+// Inverted navbar
+//
+// Reset inverted navbar basics
+@navbar-offcanvas-bg-close: 				  @border-color;
+@navbar-offcanvas-color:                      @gray-light;
+@navbar-offcanvas-bg:                         @topbar-bg;
+@navbar-offcanvas-border:                     darken(@navbar-offcanvas-bg, 10%);
+
+// Inverted navbar links
+@navbar-offcanvas-link-color:                 @gray-light;
+@navbar-offcanvas-link-hover-color:           #fff;
+@navbar-offcanvas-link-hover-bg:              transparent;
+@navbar-offcanvas-link-active-color:          @navbar-offcanvas-link-hover-color;
+@navbar-offcanvas-link-active-bg:             darken(@navbar-offcanvas-bg, 10%);
+@navbar-offcanvas-link-disabled-color:        #444;
+@navbar-offcanvas-link-disabled-bg:           transparent;
+
+// Inverted navbar brand label
+@navbar-offcanvas-brand-color:                @navbar-offcanvas-link-color;
+@navbar-offcanvas-brand-hover-color:          #fff;
+@navbar-offcanvas-brand-hover-bg:             transparent;
+
+// Inverted navbar search
+// Normal navbar needs no special styles or vars
+@navbar-offcanvas-search-bg:                  lighten(@navbar-offcanvas-bg, 25%);
+@navbar-offcanvas-search-bg-focus:            #fff;
+@navbar-offcanvas-search-border:              @navbar-offcanvas-bg;
+@navbar-offcanvas-search-placeholder-color:   #ccc;
+
+// Inverted navbar toggle
+@navbar-offcanvas-toggle-hover-bg:            #333;
+@navbar-offcanvas-toggle-icon-bar-bg:         #fff;
+@navbar-offcanvas-toggle-border-color:        #333;

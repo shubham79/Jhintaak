@@ -1,0 +1,235 @@
+/*
+*  Form
+*/
+
+/* Button
+------------------------------------------------*/
+.btn{
+	font-family: @button-font-family;
+	border-width: @button-border-width;
+	text-transform: uppercase;
+	background-image: none;
+	.border-radius(@button-border-radius);
+	.box-shadow(none);
+	.text-shadow(none);
+	&.btn-primary,
+	&.btn-default{
+		&:hover,
+		&:focus{
+			border-color: @theme-color;
+			background: @theme-color;
+			color: @white;
+			outline: none;
+			.box-shadow(none);
+			.text-shadow(none);
+		}
+	}
+	&.btn-slide{
+		margin: 0;
+		text-align: center;
+		text-transform: uppercase;
+		color: @slideshow-button-color;
+		background: @slideshow-button-bg;
+		border: @slideshow-button-border;
+		font-size: @slideshow-button-font-size;
+		padding: @slideshow-button-padding !important;
+		line-height: @slideshow-button-line-height !important;
+		.border-radius(@slideshow-button-radius);
+		&:hover{
+			color: @slideshow-button-hover-color;
+		}
+	}
+	&.btn-shipping{
+		padding-left: 0;
+		padding-right: 0;
+		border: 0;
+		&:hover,&:focus{
+			background: none;
+		}
+	}
+	&.btn-close{
+		color: @white;
+		.opacity(1);
+		display: block;
+		text-align: center;
+		margin: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		.size(25px,25px);
+		.border-radius(0);
+		background: @black;
+		.fa{
+			font-size: 15px;
+			margin: 5px;
+		}
+		&:hover,&:focus{
+			background: @black;
+		}
+	}
+	&.btn-theme-default{
+		font-size: 10px;
+		padding: 9px 15px;
+	}
+	&.btn-readmore{
+		overflow: hidden;
+		position: relative;
+		.backface-visibility(hidden);
+		span{
+			display: inline-block;
+			.size(100%,auto);
+			.transition(all 0.3s);
+			.backface-visibility(hidden);
+		}
+		&:before{
+			.size(100%,15px);
+			.transition(all 0.3s);
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: -120px;
+			margin: auto;
+			content: "\f061";
+			font-family: @theme-font-name;
+		}
+		&:hover{
+			span{
+				.translate(200%,0%);
+			}
+			&:before{
+				left: 0;
+			}
+		}
+	}
+}
+
+.reset-button-default{
+	.btn-primary,
+	.btn-default{
+		&:extend(.btn.btn-theme-default);
+	}
+}
+
+
+form{
+	&.mc4wp-form{
+		.clearfix();
+	}
+}
+
+
+/* Wooecommerce - Button - Input
+------------------------------------------------*/
+.woocommerce,
+.woocommerce-page{
+	#content,
+	#respond{
+		input.button,
+		input#submit{
+			font-family: @button-font-family;
+			text-transform: uppercase;
+			background-image: none;
+			font-weight: normal;
+			border: @button-addtocart-border;
+			background-color: @button-bg;
+			font-size: @button-font-size;
+			color: @button-color;
+			padding: 11px 15px;
+			.box-shadow(none);
+			.text-shadow(none);
+			.border-radius(@button-border-radius);
+			&:hover,
+			&:focus{
+				background: transparent;
+				color: @theme-color;
+				border-color: @theme-color;
+				outline: none;
+				.box-shadow(none);
+				.text-shadow(none);
+			}
+		}
+	}
+	a.button,button.button,input.button,
+	a.button.alt,button.button.alt,input.button.alt{
+		&:extend(.woocommerce #content input.button);
+		&:hover{
+			background: @theme-color;
+			color: @white;
+			border-color: @theme-color;
+			.text-shadow(none);
+		}
+	}
+
+	.quantity input.qty{
+		width: 55px;
+	}
+	table.cart td.actions .coupon .input-text{
+		.box-shadow(none);
+		.text-shadow(none);
+	}
+}
+
+
+/* Search
+------------------------------------------------*/
+.search-from{
+	.size(166px,auto);
+	margin: -58px 0 0 0;
+	z-index: 9990;
+	position: relative;
+}
+.wpo-search{
+	background: @search-bg;
+	.border-radius(4px);
+	.input-search{
+		background: transparent;		
+		border: @search-border;
+		color: @search-color;
+		font-size: @search-font-size;
+		padding: @search-padding;
+		height: @search-height;
+		.box-shadow(none);
+		.border-radius(4px 0px 0px 4px);
+	}
+	.fa{
+		color: @search-icon-color;
+		border: 0;
+		padding: 0;
+		background: none transparent;
+	}
+	.btn-search{
+		background: transparent;
+		border: @search-button-border;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+/* Select, Input
+------------------------------------------------*/
+select{
+	font-family: @font-family-denary;
+}
+
+.form-control{
+	.box-shadow(none);
+	padding-left: @input-padding;
+	padding-right: @input-padding;
+	border-color: @border-color;
+	.appearance();
+}
+
+input, button, select, textarea{
+	padding: @input-padding;
+	border: @input-border;
+	color: @input-color;
+	&:hover,
+	&:focus{
+		outline: none;
+	}
+}
+
+.chosen-container{
+	width: 100% !important;
+}

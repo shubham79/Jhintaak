@@ -1,0 +1,177 @@
+/*------------------------------------*\
+    Post detail
+\*------------------------------------*/
+
+.entry-title{	
+	font-family: @font-family-primary;
+	text-transform: none;
+}
+
+.title{
+	h2{
+		font-size: @post-title-font-size;
+	}
+}
+
+
+.entry-meta{
+	span{
+
+	}
+}
+
+.product-grid{
+	.product-name{
+
+	}
+}
+
+.post-share{
+	margin-bottom: @theme-margin;
+	h4{
+		margin: @post-share-margin 0;
+	}
+	.social-networks{
+		margin:@post-share-margin 0;
+		li{
+			float: left;
+			a{
+				color:@post-share-icon-color;
+				margin-right: @post-share-icon-margin;
+				font-size: @post-share-icon-size;
+			}
+			&:last-child{
+				a{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+
+/*------------------------------------*\
+    Comment List
+\*------------------------------------*/
+
+.commentlists{
+	.the-comment{
+		border-bottom: 1px solid @comment-list-border-color;
+		padding-bottom: @comment-list-padding ;
+		margin-bottom: @comment-list-margin ;
+		p{
+			margin:0;
+		}
+	}
+	div.avatar{
+		float: left;
+		margin-right:@comment-list-avatar-margin;
+	}
+	.comment-author{
+		margin-bottom: @comment-list-author-margin;
+	}
+
+	.children{
+		padding-left: @comment-list-children-padding;
+	}
+}
+
+/*------------------------------------*\
+    Blog
+\*------------------------------------*/
+.recent-blog{
+	.wrapper{
+		min-height: 235px;
+	}
+	.blog-image{
+		margin-right: @theme-margin;
+	}
+}
+.blog-title{
+	line-height: normal;
+	margin: 0 0 @theme-margin / 2 0;
+	font-size: @blog-title-font-size;
+}
+.entry-meta{
+	color: lighten(@text-color, 20%);
+	font-size: @blog-title-font-size - 4;
+	font-style: italic;
+	a{
+		color: lighten(@text-color, 20%);
+		&:hover{
+			color: @theme-color;
+		}
+	}
+}
+
+.blog-post-icon{
+	display: table;
+	text-align: center;	
+	background: @theme-color;
+	.size(60px,60px);
+	color: @white;
+	.fa{
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+.blog-post-detail{
+	overflow: hidden;
+}
+
+/*------------------------------------*\
+    Brands
+\*------------------------------------*/
+.brand-logo{
+	margin-bottom: 0;
+}
+
+/*------------------------------------*\
+    Product Page
+\*------------------------------------*/
+.woocommerce{
+	.product-block{
+		&.product{
+			margin-bottom: @theme-margin - 2;
+		}		
+	}
+}
+
+/*------------------------------------*\
+    Blog Page / Single Blog
+\*------------------------------------*/
+.post-area{
+	.entry-title{
+		margin: 20px 0 10px 0;
+	}
+	.readmore{
+		margin-top: 20px;
+	}
+	.post-link{
+		font-size: 18px;
+		color: @theme-color;
+		background: @theme-color-secondary;
+		display: block;    	
+    	padding: 17px 27px;
+    	float: left;
+    	.size(100%,auto);  
+    	min-height: 60px;      
+	}
+	.post-thumb{
+		.clearfix();	
+		img{
+			.size(100%,auto);
+		}	
+	}
+	&.single-blog{
+		.blog-title{
+			font-size: 20px;
+			text-transform: none;
+			margin: 20px 0;
+		}		
+		h1,h2,h3,h4{
+			text-transform: none;
+		}
+	}
+}
